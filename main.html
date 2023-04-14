@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 
+<!DOCTYPE html>
+
 <html>
 
 <head>
@@ -10,7 +12,52 @@
 	<!-- the entire body must be written by student -->
     <script type="text/javascript" src="./script.js">
 </script>
-
-</body>
-
+<form method="post">
+	<div>
+		<label for = "name">Name*</label>
+	    <input type= "text" required id= "name" placeholder="Name">
+	</div>
+	<div>
+		<label for = "email">Email*</label>
+	    <input type= "email" required id= "email" placeholder=Email>
+	</div>
+	<div>
+		<label for = "gender">Gender*</label>
+	    <input type= "radio" required id="gender_m" name="gender">
+		<label for= "gender_m">Male</label>
+		<input type="radio" required id="gender_f" name="gender">
+		<label for="gender_f">Female</label>
+	</div>
+	<div>
+		<label for = "cars">Car Brands*</label>
+	    <select required id="cars">
+			<option value = "" disabled selected>--Please choose an option--</option>
+			<option value = "bmw">BMW</option>
+			<option value = "audi">Audi</option>
+			<option value = "mercedez">Mercedez</option>
+		</select>
+	</div>
+	<div>
+		<label for = "age">Age*</label>
+	    <input type= "number" required id="age" placeholder=Age>
+	</div>
+	<div>
+		<label for = "dob">DOB*</label>
+	    <input type= "date" required id="dob">
+	</div>
+	<div>
+		<label for = "tel">Phoe Number</label>
+	    <input type= "tel" id="tel" placeholder="xxx-xxx-xxxx">
+	</div>
+	<div>
+		<label for = "password">Password*</label>
+	    <input type= "password" required id="password" placeholder=Password>
+	</div>
+	<div>
+		<input type= "checkbox" required id="tos" >
+		<label for = "tos">I agree to the TOS </label> 
+	</div>
+	<button type= "submit">Submit</button>
+    </form>
+  </body>
 </html>
